@@ -58,7 +58,7 @@
                 <configuration>
                     <xmlOutput>true</xmlOutput>
                     <!-- Optional directoryto put findbugs xdoc xml report -->
-                    <xmlOutputDirectory>target/findbugs</xmlOutputDirectory>
+                    <!--<xmlOutputDirectory>target/findbugs</xmlOutputDirectory>-->
 
                     <findbugsXmlOutput>true</findbugsXmlOutput>
 
