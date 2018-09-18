@@ -35,6 +35,14 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -42,6 +50,22 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <version>3.0.5</version>
+                <configuration>
+                    <xmlOutput>true</xmlOutput>
+                    <!-- Optional directoryto put findbugs xdoc xml report -->
+                    <xmlOutputDirectory>target/findbugs</xmlOutputDirectory>
+
+                    <findbugsXmlOutput>true</findbugsXmlOutput>
+
+                    <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
+
+                </configuration>
+
             </plugin>
         </plugins>
     </build>
