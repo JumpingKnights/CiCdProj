@@ -19,7 +19,8 @@ public class RoleController {
     }
 
     private void test() {
-
+        User user = null;
+        user.getId();
     }
 
 }
