@@ -18,4 +18,8 @@ public class RoleController {
         return null;
     }
 
+    private void test() {
+
+    }
+
 }
